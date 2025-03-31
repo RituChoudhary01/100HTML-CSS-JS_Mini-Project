@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+    color:white;
+    text-shadow:2px 2px 10px red, 4px 4px 20px green;
+}
+h1{
+    text-align:center;
+    font-size:10vh;
+}
+#container{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+}
+#content{
+    margin:auto;
+    padding: 4vh;
+    font-size:2rem;
+    max-width:700px;
+    margin-top:20px;
+}
+#btn {
+    font-size:3vh;
+    margin-top: 20vh;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 5px solid;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    padding: 10px 50px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 1px 1px 20px rgba(0, 252, 8, 0.824); 
+    animation: borderAnimation 5s infinite;
+}
+@keyframes borderAnimation {
+    0% {
+        border-bottom-color: red;
+        border-top-color: rgb(23, 128, 0);
+        border-left-color: rgb(255, 225, 0);
+        border-right-color: rgb(0, 30, 255);
+    }
+    25% {
+        border-bottom-color: green;
+        border-top-color: yellow;
+        border-left-color: blue;
+        border-right-color: red;
+    }
+    50% {
+        border-bottom-color: yellow;
+        border-top-color: blue;
+        border-left-color: red;
+        border-right-color: green;
+    }
+    75% {
+        border-bottom-color: blue;
+        border-top-color: red;
+        border-left-color: green;
+        border-right-color: yellow;
+    }
+    100% {
+        border-bottom-color: red;
+        border-top-color: green;
+        border-left-color: yellow;
+        border-right-color: blue;
+    }
+}
+#btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
